@@ -1,8 +1,9 @@
 import { combineReducers } from "redux";
-import cartReducer from "./cart/cart.reducer";
-import userReducer from "./user/user.reducer";
+import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
-import persistReducer from "redux-persist/es/persistReducer";
+
+import userReducer from "./user/user.reducer";
+import cartReducer from "./cart/cart.reducer";
 import directoryReducer from "./directory/directory.reducer";
 import shopReducer from "./shop/shop.reducer";
 
